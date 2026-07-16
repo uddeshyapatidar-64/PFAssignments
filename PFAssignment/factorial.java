@@ -1,4 +1,4 @@
-package PFAssignments;
+package PFAssignments.PFAssignment;
 
 import java.math.BigInteger;
 import java.util.Scanner;

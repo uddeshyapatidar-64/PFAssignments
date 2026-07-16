@@ -1,3 +1,4 @@
+package PFAssignments.PFAssignment;
 import java.util.Scanner;
 
 public class sDigit{

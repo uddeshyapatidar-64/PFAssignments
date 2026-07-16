@@ -1,24 +1,24 @@
-package PFAssignments;
+package PFAssignments.PFAssignment;
 
 import java.util.Scanner;
 
-public class pattern4 {
-    public static void printUprightHollowPattern(int peakVal) {
+public class pattern3 {
+    public static void printInvertedHollowPattern(int peakVal) {
         if (peakVal <= 0) {
             System.out.println("Pattern constraint error: Number must be greater than 0.");
             return;
         }
         StringBuilder patternBuffer = new StringBuilder();
-        for (int currentRow = 1; currentRow <= peakVal; currentRow++) {
-            for (int j = 1; j <= peakVal; j++) {
-                if (j <= currentRow) {
+        for (int currentRow = peakVal; currentRow >= 1; currentRow--) {
+            for (int j = peakVal; j >= 1; j--) {
+                if (j >= currentRow) {
                     patternBuffer.append(j);
                 } else {
                     patternBuffer.append(" ");
                 }
             }
-            for (int j = peakVal - 1; j >= 1; j--) {
-                if (j <= currentRow) {
+            for (int j = 2; j <= peakVal; j++) {
+                if (j >= currentRow) {
                     patternBuffer.append(j);
                 } else {
                     patternBuffer.append(" ");
@@ -36,8 +36,7 @@ public class pattern4 {
                 return;
             }
             int inputNum = scanner.nextInt();
-            printUprightHollowPattern(inputNum);
-
+            printInvertedHollowPattern(inputNum);
         } catch (Exception e) {
             System.out.println("An unexpected system runtime exception occurred: " + e.getMessage());
         }

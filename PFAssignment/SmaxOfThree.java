@@ -1,4 +1,4 @@
-package PFAssignments;
+package PFAssignments.PFAssignment;
 
 import java.util.Arrays;
 import java.util.Scanner;
